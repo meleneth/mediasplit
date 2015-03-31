@@ -3,6 +3,7 @@ source "https://rubygems.org"
 
 # gem "rails"
 
-gem "rspec"
-gem "factory_girl"
 gem "awesome_print"
+gem "factory_girl", "~> 4.0"
+gem "rspec"
+
