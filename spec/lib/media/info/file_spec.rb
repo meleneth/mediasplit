@@ -5,7 +5,7 @@ def test_example_dir
 end
 
 def test_filename(filename)
-  File.expand_path(File.join(filename, test_example_dir))
+  File.expand_path(File.join(test_example_dir, filename))
 end
 
 describe "Media::Info::File" do
