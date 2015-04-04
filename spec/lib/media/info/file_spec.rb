@@ -1,14 +1,6 @@
 require 'spec_helper'
 require 'media/info/file'
 
-def test_example_dir
-  File.expand_path(File.join(*%w[ .. ..  .. test_data ]), File.dirname(__FILE__))
-end
-
-def test_filename(filename)
-  File.expand_path(File.join(test_example_dir, filename))
-end
-
 describe "Media::Info::File" do
   describe "#size" do
     it "is settable" do

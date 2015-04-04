@@ -1,6 +1,8 @@
+require 'media/info/tree'
+
 module Media
   module Info
-    class Dir
+    class Dir < Media::Info::Tree
       
     end
   end
