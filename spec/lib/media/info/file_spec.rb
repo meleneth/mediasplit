@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'media/info/file'
 
 def test_example_dir
   File.expand_path(File.join(*%w[ .. ..  .. test_data ]), File.dirname(__FILE__))
@@ -19,8 +20,8 @@ describe "Media::Info::File" do
       expect(file.size).to eq(34)
     end
     it "populates from a known file" do
-      file = File.new test_filename("known_file.txt")
-      expect(file.size).to eq 50
+      file = Media::Info::File.new test_filename("known_file.txt")
+      expect(file.size).to eq(50)
     end
   end
 end

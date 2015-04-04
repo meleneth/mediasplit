@@ -1,1 +1,23 @@
 #!/usr/bin/env ruby
+
+puts (<<HERE)
+DEPRECATED.
+
+this script is being rewritten.  Below is the old usage
+----------------------------------
+Usage:
+    mediasplit.pl [-a action] [-c] [-d dest] [-e] [-h] [-m media] [-p style] [-s] source_dir
+    
+        -a action    (print | copy | move | none)
+        -c           calculate minimum disc size
+        -d dest      destination directory for copy or move
+        -e           split based on episode names in filename into Series/ep.avi
+        -f           split maintaining directory affinity
+        -g           split episodic materiel for burning
+        -h           help (this screen)
+        -m media     (dvd | cd)
+        -n number    start with media number
+        -p style     (tree | flat) prints directory tree
+        -s           split based on size
+        -v           generate SFV files (requires CFV)
+HERE
