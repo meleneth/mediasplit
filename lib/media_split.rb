@@ -1,4 +1,4 @@
-require 'media/info/file'
+require 'media/info/file_wrapper'
 require 'media/info/tree'
 require 'media/info/dir'
 

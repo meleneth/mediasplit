@@ -36,5 +36,5 @@ PLATFORMS
 
 DEPENDENCIES
   awesome_print
-  factory_girl (~> 4.0)
+  factory_girl
   rspec

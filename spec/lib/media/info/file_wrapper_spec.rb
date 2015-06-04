@@ -1,18 +1,18 @@
 require 'spec_helper'
-require 'media/info/file'
+require 'media/info/file_wrapper'
 
-describe "Media::Info::File" do
+describe "Media::Info::FileWrapper" do
   describe "#size" do
     it "is settable" do
-      file = build(:file)
+      file = build(:file_wrapper)
       file.size = 34
     end
     it "is gettable" do
-      file = build(:file, size: 34)
+      file = build(:file_wrapper, size: 34)
       expect(file.size).to eq(34)
     end
     it "populates from a known file" do
-      file = Media::Info::File.new test_filename("known_file.txt")
+      file = Media::Info::FileWrapper.new test_filename("known_file.txt")
       expect(file.size).to eq(50)
     end
   end
